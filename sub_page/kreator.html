@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container {
+        display: flex;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+      .right-container {
+        flex-direction: row !important;
+        margin-left: 0 !important;
+      }
+    </style>
+    <title>Tworzenie plakatu</title>
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <header id="header">Sesto kreator plakatów</header>
+
+    <div class="container">
+      <div id="left-side"></div>
+      <div class="right-container">
+        <div id="flex-container">
+          <div id="poster-container">
+            <div id="mg-t">
+              <div id="poster-border">
+                <canvas id="poster-edit" width="700" height="700"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-left-container">
+          <div id="creator-window">
+            <div id="creator">
+              <p>Nazwa twojej drużyny</p>
+              <input type="text" id="team" class="input" />
+              <div class="dropdown">
+                <span class="more-options1"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                  <span class="more">Więcej opcji</span></span
+                >
+                <ul class="show-list" id="your-team-color">
+                  <li class="option">
+                    <span>kolor napisu</span>
+                    <input type="color" id="first-text-color" value="#ffffff" />
+                  </li>
+                  <li class="option">
+                    <span> czcionka:</span>
+                    <select name="fonts" id="font1">
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Acetone">Acetone</option>
+                      <option value="Octin">Octin</option>
+                      <option value="RadleySans">RadleySans</option>
+                      <option value="RankedSports">RankedSports</option>
+                      <option value="RumbleSport">Rumble sport</option>
+                      <option value="Runboy">Runboy</option>
+                      <option value="Spantaran">Spantaran</option>
+                    </select>
+                  </li>
+                  <li class="option">
+                    <span>obrys</span>
+                    <input type="number" id="strokeSize1" /><input type="color" id="strokeColor1" />
+                  </li>
+                  <li class="option">cień <input type="color" id="ShadowColor1"/></li>
+                </ul>
+              </div>
+              <p>Miejscowość, data i godzina</p>
+              <input type="text" id="city" class="input" />
+              <div class="dropdown">
+                <span class="more-options2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                  <span class="more">Więcej opcji</span></span
+                >
+                <ul class="show-list" id="city-text-color">
+                  <li class="option">
+                    kolor napisu <input
+                      type="color"
+                      id="city-color"
+                      value="#FFF700"
+                    />
+                  </li>
+                  <li class="option">
+                    czcionka:
+                    <select name="fonts" id="font2">
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Acetone-w1gn6.tff">Acetone</option>
+                      <option value="octin college rg.otf">Octin</option>
+                      <option value="RadleySans-Zvybk.tff">RadleySans</option>
+                      <option value="RankedSports-4BMrB.tff">
+                        RankedSports
+                      </option>
+                      <option value="RumblesportathleticcapsBold-ZxDJ.otf">
+                        Rumble sport
+                      </option>
+                      <option value="RunboyFreeTrial-2ODAo.otf">Runboy</option>
+                      <option value="Spantaran (DEMO).ttf">Spantaran</option>
+                      <option value="Spantaran-GE2D.ttf">Spantaran</option>
+                    </select>
+                  </li>
+                  <li class="option">
+                    obrys <input type="number" id="StrokeSize2"/><input type="color" id="StrokeColor2"/>
+                  </li>
+                  <li class="option">cień <input type="color" id="ShadowColor2"/></li>
+                </ul>
+              </div>
+              <p>Nazwa przeciwnej drużyny</p>
+              <input type="text" id="opponent" class="input" />
+              <div class="dropdown">
+                <span class="more-options3"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                  <span class="more">Więcej opcji</span></span
+                >
+                <ul class="show-list" id="opponent-team-text">
+                  <li class="option">
+                    kolor napisu <br /><input type="color" id="opponent-team-color" value="#FFFFFF"/>
+                  </li>
+                  <li class="option">
+                    czcionka: <br />
+                    <select name="fonts" id="font3">
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Acetone-w1gn6.tff">Acetone</option>
+                      <option value="octin college rg.otf">Octin</option>
+                      <option value="RadleySans-Zvybk.tff">RadleySans</option>
+                      <option value="RankedSports-4BMrB.tff">
+                        RankedSports
+                      </option>
+                      <option value="RumblesportathleticcapsBold-ZxDJ.otf">
+                        Rumble sport
+                      </option>
+                      <option value="RunboyFreeTrial-2ODAo.otf">Runboy</option>
+                      <option value="Spantaran (DEMO).ttf">Spantaran</option>
+                      <option value="Spantaran-GE2D.ttf">Spantaran</option>
+                    </select>
+                  </li>
+                  <li class="option">
+                    obrys <input type="number" id="StrokeSize3"/><input type="color" id="StrokeColor3"/>
+                  </li>
+                  <li class="option">cień <input type="color" id="ShadowColor3"/></li>
+                </ul>
+              </div>
+              <p>Logo przeciwnej drużyny</p>
+              <select id="opponent-team" class="select"></select>
+              <p>Zawodnik</p>
+              <select id="your-player" class="select"></select>
+              <br />
+
+              <button id="save" class="create-Btn">Zapisz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.3.0/fontfaceobserver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="../js_files/fabric.min.js"></script>
+    <script type="module" src="../js_files/creator.js"></script>
+  </body>
+</html>
