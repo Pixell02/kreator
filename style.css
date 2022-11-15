@@ -1,0 +1,516 @@
+/* Body styling */
+* {
+   margin: 0;
+  padding: 0;
+  
+}
+body {
+  font-family: Roboto;
+ 
+}
+@font-face {
+  font-family: Acetone;
+  src: url(fonts/Acetone-w1gn6.ttf);
+}
+@font-face {
+  font-family: Octin;
+  src: url(fonts/octin_college_rg.otf);
+}
+@font-face {
+  font-family: RadleySans;
+  src: url(fonts/RadleySans-ZVYBK.ttf);
+}
+@font-face {
+  font-family: RankedSports;
+  src: url(fonts/RankedSports-4BMrB.ttf);
+}
+@font-face {
+  font-family: RumbleSport;
+  src: url(fonts/RumblesportathleticcapsBold-ZxDJ.otf);
+}
+@font-face {
+  font-family: Runboy;
+  src: url(fonts/RunboyFreeTrial-2ODAo.otf);
+}
+@font-face {
+  font-family: Spantaran;
+  src: url(fonts/Spantaran-GE2D.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-Black.ttf);
+}
+
+
+/* Header styling */
+
+#header {
+  text-align: center;
+  font-size: 25px;
+  background-color: rgb(3, 3, 105);
+  color: white;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  height: 40px;
+  z-index: 11;
+  position: fixed;
+}
+
+/* left side styling */
+#left-side {
+  background-color: rgb(8, 8, 175);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  top: 80px;
+  max-width: 140px;
+  z-index: 10;
+  
+  
+}
+ul {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+.show-list, li {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  
+}
+.left-side-element {
+  list-style-type: none;
+  color: white;
+  padding: 15px;
+  width:auto;
+  transition: 0.2s ease-in-out;
+  
+}
+.left-side-element:hover {
+  background-color: black;
+  opacity: 0.8;
+}
+/* Styling index.html */
+
+
+.team-name {
+  padding: 5px;
+}
+
+.down-container {
+  box-sizing: border-box;
+}
+.team-picture-border {
+  border: black solid 1px;
+  width: 150px;
+}
+input[type="range"] {
+  width: 80%;
+}
+.range-container {
+  margin: 5vh 0 0 14vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.number-container {
+  margin: 1vh 0 0 1vh;
+  font-size: 25px;
+  font-weight: bold;
+}
+.team-picture {
+  width: 150px;
+}
+
+.create-Btn {
+  height: 40px;
+  width: 152px;
+  background-color: rgb(2, 2, 129);
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+
+.create-Btn:hover {
+  background-color: rgb(1, 1, 65);
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
+.modal-window {
+  width: 700px;
+  height: 600px;
+  max-width: 700px;
+  max-height: 600px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 2px 0 black;
+  display: flex;
+  justify-content: right;
+}
+
+
+.modal-block {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.inputPlace {
+  margin-top: 10px;
+}
+
+.inputName {
+  margin-bottom: 10px;
+}
+.upload {
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  box-shadow: 1px 1px 5px 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#upload {
+  margin-left: 0;
+}
+.input-file {
+  display: none;
+}
+.uploaded-file {
+  max-width: 150px;
+  max-height: 150px;
+  margin-left: 50px;
+}
+.button-flex-right {
+  display: flex;
+  justify-content: right;
+}
+#Cancel {
+  margin-right: -10px;
+}
+.binIcon {
+  margin-right: 50px;
+}
+/* kreator */
+
+#poster {
+  width: 70%;
+  height: 100px;
+}
+
+#creator {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 20px;
+  overflow: auto;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.poster {
+  max-width: 100%;
+  height: auto;
+  margin-right: 40px;
+  
+}
+.napis {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#poster-container {
+  display: flex;
+}
+
+#poster-border {
+  width: 90%;
+  max-width: 700px;
+  max-height: 700px;
+  height: auto;
+  background-color: aqua;
+}
+#save {
+  margin-top: 20px;
+}
+.text {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  height: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+#przeciwnik {
+  margin-top: 50%;
+}
+#data {
+  margin-top: 30px;
+  color: black !important;
+  font-size: 15px;
+  text-shadow: 0 0 10px yellow, 0 0 10px yellow, 0 0 10px yellow;
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+}
+#ty {
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.square-container {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 2px black);
+  display: inline-block;
+}
+.square-container:hover {
+  transition: 0.2s ease-in-out;
+  background-color: rgb(230, 230, 230);
+}
+.title {
+  width: 100%;
+}
+#right-side {
+  display: inline-block;
+}
+.right-container {
+  margin-top: 80px;
+  margin-left: 140px;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  flex-direction: column;
+}
+.price-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0 0 0;
+}
+.price-container {
+  margin: 10px 0 0 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+hr {
+  margin-top: 1vh;
+}
+.mt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#poster-edit {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.dropdown {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dropdown ul {
+  height: 0px;
+  text-align: left;
+  display: none;
+  list-style-type: none;
+}
+#creator a {
+  text-decoration: none;
+  color: black;
+}
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  font-size: 25px;
+}
+input[type="color"], select {
+  margin-top: 10px;
+  width: 150px;
+  height: 20px;
+}
+
+#creator-window {
+  width: 100%;
+  border-left: rgb(179, 179, 179) solid 1px;
+ 
+}
+#flex-container {
+  display: flex;
+  width: 70%;
+  margin-left: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.flex-left-container {
+  display: flex;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+}
+.added {
+  min-height: 200px;
+  height: 200px;
+  width: 100%;
+  display: inline-block;
+}
+.toChoose {
+  width: 100%;
+  display: inline-block;
+  padding-left: 0;
+}
+.rectangle {
+  margin-left: 40px;
+  
+  margin-top: 20px;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 2px black);
+  display: inline-block;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle:hover {
+  transition: 0.5s ease-in-out;
+  background-color: rgb(196, 196, 196);
+}
+
+.rectangle-content {
+  max-width: 200px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  max-width: 100px;
+  max-height: 100px;
+}
+.imageIcon {
+  max-width: 100px;
+  width: auto;
+  max-height: 100px;
+}
+.add-Btn {
+  background-color: rgb(6, 6, 170);
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 40px;
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+.button-container {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+}
+.Btn-container {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+#opponent-team, #your-player {
+  width: 210px;
+}
+.option {
+  margin-top: 10px;
+}
+svg {
+  margin-right: 10px;
+}
+.dropdown .more-options .bi:focus,
+.dropdown .more-options .bi:hover {
+  transition: ease-in-out 0.5s;
+  transform: rotate(180deg);
+}
+p {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1185px) {
+  .container {
+    height: 100%;
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  #flex-container {
+    width: 100%;
+  }
+  .flex-left-container {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    margin-top: 20px;
+  }
+  #creator-window {
+    display: flex;
+    border-top: 1px black solid;
+    align-items: left;
+    justify-content: left;
+    margin: 0 0 0 20px;
+  }
+  #creator {
+    border: none;
+    width: 100%;
+    margin-left: 140px;
+    height: auto;
+  }
+  #poster-border {
+    margin-top: 20px;
+  }
+  input[type=text] {
+    width: 90%;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 1550px){
+  #flex-container {
+    margin-left: 145px;
+  }
+
+}
+  
